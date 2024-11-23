@@ -7,4 +7,5 @@ Black
 scikit-learn
 catboost
 xgboost
--e .
+black[jupyter]
+# -e .
