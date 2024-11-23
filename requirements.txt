@@ -4,4 +4,7 @@ seaborn
 isort
 flake8
 Black
+scikit-learn
+catboost
+xgboost
 -e .
