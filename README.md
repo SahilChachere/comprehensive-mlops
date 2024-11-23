@@ -1,5 +1,5 @@
 # comprehensive-mlops
-## commands used
+## A. commands used
 ### 1. creating env 
 #### 1.1 Pycharm
 1. Go to ``File -> Settings -> Tools -> Terminal -> Application Settings``
