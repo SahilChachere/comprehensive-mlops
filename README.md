@@ -7,4 +7,6 @@
 ![img.png](images/pycharm_conda_config.png)
 ```commandline
 conda create -p venv python==3.11
+
+conda activate venv/
 ```
