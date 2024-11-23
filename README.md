@@ -1,4 +1,4 @@
-# comprehensive-mlops
+# comprehensive-mlops (Project under development)
 ## A. commands used
 ### 1. creating env 
 #### 1.1 Pycharm
