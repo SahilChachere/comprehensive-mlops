@@ -1,0 +1,7 @@
+pandas
+numpy
+seaborn
+isort
+flake8
+Black
+-e .
