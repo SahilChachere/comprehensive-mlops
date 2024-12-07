@@ -48,7 +48,7 @@ class DataIngestion:
                 self.ingestion_config.test_data_path, index=False, header=True
             )
 
-            logging.info("Inmgestion of the data iss completed")
+            logging.info("Ingestion of the data is completed")
 
             return (
                 self.ingestion_config.train_data_path,
