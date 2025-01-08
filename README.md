@@ -16,5 +16,5 @@ conda activate venv/
 
 ## C. Code Quality
 **1** `Sort Imports:` Utilizes the `isort` Python package to automatically sort imports in .py files, ensuring they are organized and well-ordered. Run the `isort .` command to organize and sort imports within your project files.\
-**2** `Flake8:` Combines pyflakes, pycodestyle, and mccabe to check for style and quality issues in your code.\
+**2** `Flake8:` Combines pyflakes, pycodestyle, and mccabe to check for style and quality issues in your code. Run the `python -m flake8 .` command to execute.\
 **3** `Black:` A code formatter that automatically formats your Python code to adhere to the PEP 8 style guide. Run the `python -m black .` command to execute.
