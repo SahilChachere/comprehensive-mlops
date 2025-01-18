@@ -1,10 +1,14 @@
 import os
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from dataclasses import dataclass
 
-from sklearn.ensemble import (AdaBoostRegressor, GradientBoostingRegressor,
-                              RandomForestRegressor)
+from sklearn.ensemble import (
+    AdaBoostRegressor,
+    GradientBoostingRegressor,
+    RandomForestRegressor,
+)
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeRegressor
@@ -102,7 +106,8 @@ class ModelTrainer:
             predicted = best_model.predict(X_test)
 
             r2_square = r2_score(y_test, predicted)
-            return r2_square
+            logging.info(f"{best_model_name} is Best trained model with r2_square {r2_square}")
+            return best_model_name, r2_square
 
         except Exception as e:
             raise CustomException(e, sys)
