@@ -1,7 +1,7 @@
 # comprehensive-mlops (Project under development)
 `Description:` Project `comprehensive-mlops` is an end-to-end MLOps initiative encompassing various stages, including `Data Ingestion, Data Transformation, Model Development, Model Evaluation, and Model Deployment.` Leveraging tools such as GitHub Actions for CI/CD and deploying on AWS cloud, this project ensures a seamless and automated machine learning lifecycle.  
 ## A. IDE & Virtual Environment Configuration
-### A.1 Pycharm
+### A.1 Pycharm(Windows)
 1. Go to ``File -> Settings -> Tools -> Terminal -> Application Settings``
 2. Replace the value in Shell path with ``cmd.exe "/K" C:\path\to\Anaconda3\Scripts\activate.bat``
 ![img.png](images/pycharm_conda_config.png)
@@ -11,10 +11,18 @@ conda create -p venv python==3.11
 conda activate venv/
 ```
 
+### A.2 VSCode(Mac OS)
+1. Install brew
+`brew install libomp` and follow instructions on terminal at bottom.
+2. `brew --version` if you can see brew version everything went well.
+
 ## B. Project Setup for Pypi
 `` See setup.py, requirements.txt files and src directory residing in root.``
 
 ## C. Code Quality
 **1** `Sort Imports:` Utilizes the `isort` Python package to automatically sort imports in .py files, ensuring they are organized and well-ordered. Run the `isort .` command to organize and sort imports within your project files.\
-**2** `Flake8:` Combines pyflakes, pycodestyle, and mccabe to check for style and quality issues in your code.\
+**2** `Flake8:` Combines pyflakes, pycodestyle, and mccabe to check for style and quality issues in your code. Run the `python -m flake8 .` command to execute.\
 **3** `Black:` A code formatter that automatically formats your Python code to adhere to the PEP 8 style guide. Run the `python -m black .` command to execute.
+
+## D. Execution
+**1** To execute end-to-end data_ingestion, data_transformation, model_trainer, run `python src/components/data_ingestion.py`. This will also save logs under logs directory as well as display on console.

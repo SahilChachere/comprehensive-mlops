@@ -8,4 +8,6 @@ scikit-learn
 catboost
 xgboost
 black[jupyter]
+dill
+nox
 # -e .
